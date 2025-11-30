@@ -1,0 +1,22 @@
+/**
+ *#FF5250FF;  #0000001A;   background:     #000000FF;background-alt: #101010FF
+    
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors
+ **/
+
+
+
+* {
+   background:     #101010FF;     // bg      fondo oscuro (negro muy oscuro) con 75% de opacidad
+   background-alt: #2e2e2eFF;   // bga     fondo oscuro opaco (negro muy oscuro, sin transparencia)
+   foreground:     #f5f5f5FF;   // fg      texto claro casi blanco, opaco total
+   selected:       #fdd835FF;    // se      amarillo muy claro y transparente (10% opacidad)
+   active:         #fdd835FF;   // ac      amarillo brillante opaco total (activo)
+   urgent:         #0000001A;  // al (transparente total)  negro muy transparente (10% opacidad)
+}
+
+
+   

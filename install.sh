@@ -1,9 +1,8 @@
-!/bin/bash
+#!/bin/bash
 #pide el root solo una vez 
 sudo -v
 
 while true; do sudo -v; sleep 60; done &
-
 sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm  rofi alacritty picom udiskie  feh python-psutil lxappearance lightdm-gtk-greeter-settings 
 sudo pacman -S --noconfirm  breeze base-devel rust vlc unzip  nemo firefox obsidian  git polybar 

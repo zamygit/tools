@@ -12,10 +12,14 @@ exec --no-startup-id i3-msg "workspace 3"
 
 
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id picom -b
-exec --no-startup-id feh --bg-scale /home/zamy/.config/wallpaper/7.png
+exec --no-startup-id feh --bg-scale /home/zamy/.config/wallpaper/6.png
 exec --no-startup-id sleep 1=; bash /home/zamy/.config/polybar/launch.sh
-exec --no-startup-id xrandr --output Virtual-1 --mode 1280x1024 --rate 75.02  
+exec --no-startup-id xrandr --output Virtual-1 --mode 1280x1024 --rate 75.02
+
+# disable 
+
+#exec --no-startup-id picom -b  
+#exec --no-startup-id xrandr --output DP-3 --mode 1280x1024 --rate 75.02  
 #exec_always --no-startup-id autotiling
 
 

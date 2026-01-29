@@ -25,10 +25,11 @@ echo -e "${YELLOW}Actualizando Repositorios${NC}"
 sudo pacman -Syu --noconfirm
 #instala utilidades base para mi entorno :V
 echo -e "${YELLOW}Instalando utilidades base....${NC}"
+sudo pacman -S --noconfirm  mesa intel-media-driver vulkan-intel lib32-mesa lib32-vulkan-intel libva-utils
 sudo pacman -S --noconfirm  rofi alacritty picom udiskie  feh python-psutil lxappearance lightdm-gtk-greeter-settings pulseaudio
 #instala herrmientas del dia dia  :V
 echo -e "${YELLOW}Instalando Herramientas del dia....${NC}"
-sudo pacman -S --noconfirm  breeze base-devel rust  unzip  nemo firefox obsidian  git polybar cava pavucontrol
+sudo pacman -S --noconfirm  breeze base-devel rust  unzip  nemo firefox obsidian  git polybar cava pavucontrol discord 
 
 
 #instala paru repistorios AUR
@@ -62,5 +63,6 @@ sudo rm -f /usr/share/applications/{avahi-discover.desktop,breezestyleconfig.des
 
 
 echo -e "${YELLOW}listo reiniciaaa ....${NC}"
-#reboot
+reboot
 #nerd-fonts
+#Holaaa

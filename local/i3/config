@@ -12,15 +12,16 @@ exec --no-startup-id i3-msg "workspace 3"
 
 
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id feh --bg-fill /home/zamy/.config/wallpaper/2.png
+exec --no-startup-id feh --bg-fill /home/zamy/.config/wallpaper/11.jpg
 exec --no-startup-id sleep 1=; bash /home/zamy/.config/polybar/launch.sh
-exec --no-startup-id xrandr --output Virtual-1 --mode 1280x1024 --rate 75.02
+exec --no-startup-id xrandr --output DP-3 --mode 1280x1024 --rate 75.02 
+exec --no-startup-id picom -b 
+exec --no-startup-id nm-applet
 
 # disable 
-
-#exec --no-startup-id picom -b  
-#exec --no-startup-id xrandr --output DP-3 --mode 1280x1024 --rate 75.02  
+#exec --no-startup-id xrandr --output Virtual-1 --mode 1280x1024 --rate 75.02
 #exec_always --no-startup-id autotiling
+
 
 
 # Bloqueo de pantalla y gestión de red
@@ -122,8 +123,6 @@ client.focused          #000000 #000000 #ffffff #000000
 client.unfocused     	#4a4a4a #4a4a4a #ffffff #4a4a4a
 
 
-
-
 # Configuración de la barra---------------------------------------------
 #bar {
 #      status_command i3status
@@ -138,7 +137,5 @@ client.unfocused     	#4a4a4a #4a4a4a #ffffff #4a4a4a
   #     urgent_workspace   #00ff00 #000000 #00ff00  
   #  }
 #}
-
-
 
 

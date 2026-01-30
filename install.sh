@@ -65,4 +65,4 @@ sudo rm -f /usr/share/applications/{avahi-discover.desktop,breezestyleconfig.des
 echo -e "${YELLOW}listo reiniciaaa ....${NC}"
 reboot
 #nerd-fonts
-#Holaaa
+#HDanielzaaaa,m

@@ -28,4 +28,15 @@ paquetes paru
   paru -S arc-gtk-theme            
   sublime-text-4               
 
-new update  222
+
+
+sudo pacman -S tty-clock
+sudo pacman -S network-manager-applet libnm-gtk networkmanager-openvpn
+
+paru -S riseup-vpn
+
+repos black arch
+curl -O https://blackarch.org/strap.sh
+chmod +x strap.sh
+sudo ./strap.sh
+

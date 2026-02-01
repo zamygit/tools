@@ -1,38 +1,17 @@
-**lista de recursos y paquetes básico
-paquetes con pacman 
-------------------------------------------
-alacritty 
-picom
-udiskie 
-feh 
-neofetch 
-lxappearance 
-vlc
-firefox
-obsidian 
-git 
-unzip
-polybar
-nitrogen 
-breeze
-arar
-xrandr
-
-----------------------------------------------
  git clone https://github.com/adi1090x/rofi.git
  git clone https://aur.archlinux.org/paru.git
 
 
 paquetes paru 
-  paru -S papirus-icon-theme 
+  paru -S papirus-icon-themsssssse 
   paru -S arc-gtk-theme            
   sublime-text-4               
 
 
 
 sudo pacman -S tty-clock
-sudo pacman -S network-manager-applet libnm-gtk networkmanager-openvpn
-
+redes wifi      sudo pacman -S network-manager-applet libnm-gtk networkmanager-openvpn   buscar como iniciar el servicio
+para que agarre el cel sudo pacman -S mtpfs libmtp gvfs-mtp
 paru -S riseup-vpn
 
 repos black arch

@@ -1,26 +1,44 @@
 #! /bin/bash
+
+# Definir colores
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
++
+echo -e "-----------------------------------------------"
+echo -e "${GREEN}"
+cat << 'EOF'
+     _       _      __ _ _ 
+    | |     | |    / _|(_)| |
+  __| |  ___| |_  |_ _  | |  ___  ___
+ / _` | / _ \ | __||  _|| || | / _ \/ __|
+| (_| || (_) || |_ | |  | || ||  __/\__ \
+ \__,_| \___/  \__||_|  |_||_| \___||___/
+EOF
+echo -e "${NC}               ${YELLOW}by.zamygit${NC}"
+echo -e "${NC}               ${YELLOW}i3+poybar+rofi${NC}"
+echo -e "-----------------------------------------------"
+
+
 #pide el root solo una vez 
 sudo -v
 while true; do sudo -v; sleep 60; done &
 
-#actualiza los repositorios 
-
+#actualiza los repositorios y instala herraminestas base
 sudo pacman -Syu --noconfirm
-
-#instala utilidades base para mi entorno :V
 sudo pacman -S --noconfirm  mesa intel-media-driver vulkan-intel lib32-mesa lib32-vulkan-intel libva-utils pulseaudio
 sudo pacman -S --noconfirm  rofi alacritty picom udiskie  feh python-psutil lxappearance lightdm-gtk-greeter-settings 
 
 #instala herrmientas del dia dia  :V
-
-sudo pacman -S --noconfirm  breeze base-devel rust  unzip  nemo firefox obsidian  git polybar cava pavucontrol  
+sudo pacman -S --noconfirm  breeze base-devel rust  unzip  nemo firefox   git polybar cava pavucontrol  
 sudo pacman -S --noconfirm  network-manager-applet libnm-gtk networkmanager-openvpn discord tty-clock
 sudo pacman -S --noconfirm  mtpfs libmtp gvfs-mtp
-sudo systemctl enable --now NetworkManager
+
 
 #instala paru repistorios AUR
-
-
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
@@ -44,20 +62,16 @@ chmod +x ~/.config/rofi/powermenu/type-2/powermenu.sh
 
 
 
-sudo rm -f /usr/share/applications/{avahi-discover.desktop,breezestyleconfig.desktop,bssh.desktop,bvnc.desktop,compton.desktop,feh.desktop,gkbd-keyboard-display.desktop,google-maps-geo-handler.desktop,i3.desktop,kcm_breezedecoration.desktop,ktelnetservice6.desktop,mpc-qt.desktop,mpv.desktop,nemo-autorun-software.desktop,nemo-autostart.desktop,openstreetmap-geo-handler.desktop,org.gnupg.pinentry-qt5.desktop,org.gnupg.pinentry-qt.desktop,org.kde.kiod6.desktop,org.kde.knewstuff-dialog6.desktop,picom.desktop,qv4l2.desktop,qvidcap.desktop,rofi.desktop,rofi-theme-selector.desktop,uxterm.desktop,wheelmap-geo-handler.desktop,xterm.desktop}
 
 curl -O https://blackarch.org/strap.sh
 chmod +x strap.sh
 sudo ./strap.sh
 
+
+sudo systemctl enable --now NetworkManager
 sudo pacman -Rns xterm
-
-
-
+sudo rm -f /usr/share/applications/{avahi-discover.desktop,breezestyleconfig.desktop,bssh.desktop,bvnc.desktop,compton.desktop,feh.desktop,gkbd-keyboard-display.desktop,google-maps-geo-handler.desktop,i3.desktop,kcm_breezedecoration.desktop,ktelnetservice6.desktop,mpc-qt.desktop,mpv.desktop,nemo-autorun-software.desktop,nemo-autostart.desktop,openstreetmap-geo-handler.desktop,org.gnupg.pinentry-qt5.desktop,org.gnupg.pinentry-qt.desktop,org.kde.kiod6.desktop,org.kde.knewstuff-dialog6.desktop,picom.desktop,qv4l2.desktop,qvidcap.desktop,rofi.desktop,rofi-theme-selector.desktop,uxterm.desktop,wheelmap-geo-handler.desktop,xterm.desktop}
 echo exito
-
-
-
 
 
 

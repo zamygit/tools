@@ -10,7 +10,7 @@ paquetes paru
 
 
 sudo pacman -S tty-clock
-redes wifi      sudo pacman -S network-manager-applet libnm-gtk networkmanager-openvpn   buscar como iniciar el servicio
+redes wifi  sudo pacman -S network-manager-applet libnm-gtk networkmanager-openvpn   buscar como iniciar el servicio
 para que agarre el cel sudo pacman -S mtpfs libmtp gvfs-mtp
 paru -S riseup-vpn
 

@@ -19,3 +19,7 @@ curl -O https://blackarch.org/strap.sh
 chmod +x strap.sh
 sudo ./strap.sh
 
+634752
+
+
+si me coneco
